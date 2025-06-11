@@ -16,6 +16,10 @@
 /// \brief  Task to produce nuclei flow tree QC
 ///
 
+/// \file flowQC.cxx
+/// \author Marco Bianchi (mbianchi@cern.ch)
+/// \brief Task to produce nuclei flow tree QC
+
 #include <cmath>
 #include <memory>
 #include <string>
