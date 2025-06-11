@@ -21,7 +21,7 @@
 
 ///
 /// \file   nucleiFlowTree.cxx
-/// \author Marco Bianchi <mbianchi@cern.ch>
+/// \author Marco Bianchi <marco.b@cern.ch>
 ///
 /// \brief  Task to produce nuclei flow tree
 ///
