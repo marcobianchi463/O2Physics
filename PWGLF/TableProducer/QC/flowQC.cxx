@@ -19,9 +19,12 @@
 // o2-analysis-multiplicity-table, o2-analysis-ft0-corrected-table, o2-analysis-track-propagation,
 // o2-analysis-trackselection, o2-analysis-qvector-table, o2-analysis-lf-flow-qc
 
+///
 /// \file   flowQC.cxx
 /// \author Marco Bianchi (mbianchi@cern.ch)
+///
 /// \brief  Task to produce nuclei flow tree QC
+///
 
 #include <cmath>
 #include <memory>

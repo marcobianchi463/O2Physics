@@ -19,9 +19,12 @@
 // o2-analysis-pid-tof-base, o2-analysis-multiplicity-table, o2-analysis-event-selection
 // (to add flow: o2-analysis-qvector-table, o2-analysis-centrality-table)
 
+///
 /// \file   nucleiFlowTree.cxx
 /// \author Marco Bianchi (mbianchi@cern.ch)
+///
 /// \brief  Task to produce nuclei flow tree
+///
 
 #include <algorithm>
 #include <cmath>
