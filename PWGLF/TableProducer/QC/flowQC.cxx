@@ -20,6 +20,9 @@
 // o2-analysis-trackselection, o2-analysis-qvector-table, o2-analysis-lf-flow-qc
 
 #include <cmath>
+#include <memory>
+#include <string>
+#include <vector>
 
 #include "Math/Vector4D.h"
 
