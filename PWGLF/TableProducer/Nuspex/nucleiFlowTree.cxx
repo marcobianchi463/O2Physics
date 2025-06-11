@@ -21,7 +21,7 @@
 
 ///
 /// \file   nucleiFlowTree.cxx
-/// \author Marco Bianchi (mbianchi@cern.ch)
+/// \author Marco Bianchi <mbianchi@cern.ch>
 ///
 /// \brief  Task to produce nuclei flow tree
 ///
@@ -314,7 +314,7 @@ struct nucleiFlowTree {
       {nuclei::charges[3] * cfgMomentumScalingBetheBloch->get(3u, 0u) / nuclei::masses[3], nuclei::charges[3] * cfgMomentumScalingBetheBloch->get(3u, 1u) / nuclei::masses[3]},
       {nuclei::charges[4] * cfgMomentumScalingBetheBloch->get(3u, 0u) / nuclei::masses[4], nuclei::charges[4] * cfgMomentumScalingBetheBloch->get(3u, 1u) / nuclei::masses[4]}};
 
-    for (auto& const track : tracks) { // start loop over tracks
+    for (const auto& track : tracks) { // start loop over tracks
       if (std::abs(track.eta()) > cfgCutEta ||
           track.tpcInnerParam() < cfgCutTpcMom ||
           track.itsNCls() < cfgCutNclusITS ||
@@ -462,10 +462,10 @@ struct nucleiFlowTree {
       return;
     }
     fillDataInfo(collision, tracks);
-    for (auto& const c : nuclei::candidates) {
+    for (const auto& c : nuclei::candidates) {
       nucleiTable(c.pt, c.eta, c.phi, c.tpcInnerParam, c.beta, c.zVertex, c.DCAxy, c.DCAz, c.TPCsignal, c.ITSchi2, c.TPCchi2, c.TOFchi2, c.flags, c.TPCfindableCls, c.TPCcrossedRows, c.ITSclsMap, c.TPCnCls, c.TPCnClsShared, c.clusterSizesITS);
     }
-    for (auto& const c : nuclei::candidates_flow) {
+    for (const auto& c : nuclei::candidates_flow) {
       nucleiTableFlow(c.centFV0A, c.centFT0M, c.centFT0A, c.centFT0C, c.psiFT0A, c.psiFT0C, c.psiTPC, c.psiTPCl, c.psiTPCr, c.qFT0A, c.qFT0C, c.qTPC, c.qTPCl, c.qTPCr);
     }
   }
@@ -479,10 +479,10 @@ struct nucleiFlowTree {
       return;
     }
     fillDataInfo(collision, tracks);
-    for (auto& const c : nuclei::candidates) {
+    for (const auto& c : nuclei::candidates) {
       nucleiTable(c.pt, c.eta, c.phi, c.tpcInnerParam, c.beta, c.zVertex, c.DCAxy, c.DCAz, c.TPCsignal, c.ITSchi2, c.TPCchi2, c.TOFchi2, c.flags, c.TPCfindableCls, c.TPCcrossedRows, c.ITSclsMap, c.TPCnCls, c.TPCnClsShared, c.clusterSizesITS);
     }
-    for (auto& const c : nuclei::candidates_flow) {
+    for (const auto& c : nuclei::candidates_flow) {
       nucleiTableFlow(c.centFV0A, c.centFT0M, c.centFT0A, c.centFT0C, c.psiFT0A, c.psiFT0C, c.psiTPC, c.psiTPCl, c.psiTPCr, c.qFT0A, c.qFT0C, c.qTPC, c.qTPCl, c.qTPCr);
     }
   }

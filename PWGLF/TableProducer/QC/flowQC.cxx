@@ -21,7 +21,7 @@
 
 ///
 /// \file   flowQC.cxx
-/// \author Marco Bianchi (mbianchi@cern.ch)
+/// \author Marco Bianchi <mbianchi@cern.ch>
 ///
 /// \brief  Task to produce nuclei flow tree QC
 ///
