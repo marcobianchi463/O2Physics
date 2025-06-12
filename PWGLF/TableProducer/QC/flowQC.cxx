@@ -20,36 +20,34 @@
 /// \author Marco Bianchi (mbianchi@cern.ch)
 /// \brief Task to produce nuclei flow tree QC
 
-#include <cmath>
-#include <memory>
-#include <string>
-#include <vector>
+#include "PWGLF/DataModel/EPCalibrationTables.h"
 
-#include "Math/Vector4D.h"
-
-#include "CCDB/BasicCCDBManager.h"
-
+#include "Common/Core/EventPlaneHelper.h"
 #include "Common/Core/trackUtilities.h"
 #include "Common/DataModel/Centrality.h"
-#include "Common/DataModel/Multiplicity.h"
 #include "Common/DataModel/EventSelection.h"
-#include "Common/Core/EventPlaneHelper.h"
-#include "PWGLF/DataModel/EPCalibrationTables.h"
+#include "Common/DataModel/Multiplicity.h"
 #include "Common/DataModel/Qvectors.h"
 
+#include "CCDB/BasicCCDBManager.h"
 #include "DataFormatsParameters/GRPMagField.h"
 #include "DataFormatsParameters/GRPObject.h"
 #include "DataFormatsTPC/BetheBlochAleph.h"
 #include "DetectorsBase/GeometryManager.h"
 #include "DetectorsBase/Propagator.h"
-
+#include "Framework/ASoAHelpers.h"
 #include "Framework/AnalysisDataModel.h"
 #include "Framework/AnalysisTask.h"
-#include "Framework/ASoAHelpers.h"
 #include "Framework/HistogramRegistry.h"
 #include "Framework/runDataProcessing.h"
 
+#include "Math/Vector4D.h"
 #include "TRandom3.h"
+
+#include <cmath>
+#include <memory>
+#include <string>
+#include <vector>
 
 using namespace o2;
 using namespace o2::framework;
